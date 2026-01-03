@@ -1,0 +1,3 @@
+Class.dualiaWeapon_null = {
+	
+}
