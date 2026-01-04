@@ -23,6 +23,15 @@ const dualia = {
 			LAYER: l,
 		}
 	},
+	prop(s,x,y,an,l) {
+		return {
+			SIZE: s,
+			X: 10*x,
+			Y: 10*y,
+			ANGLE: an,
+			LAYER: l,
+		}
+	},
 }
 Class.dualiaWeapon_null = {
 	PARENT: "genericTank",
