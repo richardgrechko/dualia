@@ -38,7 +38,11 @@ Class.dualiaBody_null = {
 	LABEL: "",
 	PROPS: [
 		{
-			
+			POSITION: dualia.prop(0.5,0,0,0,1),
+			TYPE: ["genericTank", {COLOR: {
+				BASE: "mirror",
+				BRIGHTNESS_SHIFT: 15
+			}}]
 		}
 	]
 }
