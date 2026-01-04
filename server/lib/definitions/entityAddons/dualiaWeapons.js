@@ -1,4 +1,4 @@
-const { combineStats, skillSet, makeAura, makeRadialAuto } = require('../facilitators.js');
+const { combineStats, skillSet, makeAura, makeAuto, makeRadialAuto } = require('../facilitators.js');
 const { base, gunCalcNames, basePolygonDamage, basePolygonHealth, dfltskl, smshskl, statnames } = require('../constants.js');
 const g = require('../gunvals.js');
 const dualia = {
@@ -12,7 +12,17 @@ const dualia = {
 			ANGLE: deg,
 			DELAY: t,
 		}
-	}
+	},
+	turret(s,x,y,an,arc,l) {
+		return {
+			SIZE: s,
+			X: 10*x,
+			Y: 5*y,
+			ANGLE: an,
+			ARC: 2*arc,
+			LAYER: l,
+		}
+	},
 }
 Class.dualiaWeapon_null = {
 	PARENT: "genericTank",
