@@ -160,6 +160,110 @@ Class.dualiaWeapon_guard = {
 		}
 	]
 }
+//// Tier 2 Bullets
+Class.dualiaWeapon_assassin = {
+	PARENT: "genericTank",
+	LABEL: "Assassin",
+	BODY: {
+		FOV: 1.25
+	},
+	GUNS: [
+		{
+			POSITION: dualia.gun(1.25,0.45,1,0,0,0,0),
+			PROPERTIES: {
+				SHOOT_SETTINGS: combineStats([g.basic, g.sniper, g.assassin]),
+				TYPE: "bullet"
+			}
+		},
+		{
+			POSITION: dualia.gun(0.3,0.45,-1.25,0.35,0,0,0),
+		},
+	]
+}
+Class.dualiaWeapon_trial = {
+	PARENT: "genericTank",
+	LABEL: "Trial",
+	GUNS: [
+		{
+			POSITION: dualia.gun(0.7,0.4,1,0,-0.6,0,0.5),
+			PROPERTIES: {
+				SHOOT_SETTINGS: combineStats([g.basic, g.twin]),
+				TYPE: "bullet"
+			}
+		},
+		{
+			POSITION: dualia.gun(0.7,0.4,1,0,0.6,0,0.5),
+			PROPERTIES: {
+				SHOOT_SETTINGS: combineStats([g.basic, g.twin]),
+				TYPE: "bullet"
+			}
+		},
+		{
+			POSITION: dualia.gun(0.9,0.4,1,0,0,0,0),
+			PROPERTIES: {
+				SHOOT_SETTINGS: combineStats([g.basic, g.twin]),
+				TYPE: "bullet"
+			}
+		},
+	]
+}
+//// Tier 3 Bullets
+Class.dualiaWeapon_ranger = {
+	PARENT: "genericTank",
+	LABEL: "Ranger",
+	BODY: {
+		FOV: 1.4
+	},
+	GUNS: [
+		{
+			POSITION: dualia.gun(1.4,0.45,1,0,0,0,0),
+			PROPERTIES: {
+				SHOOT_SETTINGS: combineStats([g.basic, g.sniper, g.assassin]),
+				TYPE: "bullet"
+			}
+		},
+		{
+			POSITION: dualia.gun(0.5,0.45,-1.15,0.35,0,0,0),
+		},
+		{
+			POSITION: dualia.gun(0.4,0.55,-1.25,0.25,0,0,0),
+		},
+	]
+}
+Class.dualiaWeapon_quadral = {
+	PARENT: "genericTank",
+	LABEL: "Quadral",
+	GUNS: [
+		{
+			POSITION: dualia.gun(0.7,0.25,1,0,-0.75,0,0),
+			PROPERTIES: {
+				SHOOT_SETTINGS: combineStats([g.basic, g.twin]),
+				TYPE: "bullet"
+			}
+		},
+		{
+			POSITION: dualia.gun(0.7,0.25,1,0,0.75,0,0),
+			PROPERTIES: {
+				SHOOT_SETTINGS: combineStats([g.basic, g.twin]),
+				TYPE: "bullet"
+			}
+		},
+		{
+			POSITION: dualia.gun(0.9,0.25,1,0,-0.5,0,0.5),
+			PROPERTIES: {
+				SHOOT_SETTINGS: combineStats([g.basic, g.twin]),
+				TYPE: "bullet"
+			}
+		},
+		{
+			POSITION: dualia.gun(0.9,0.25,1,0,0.5,0,0.5),
+			PROPERTIES: {
+				SHOOT_SETTINGS: combineStats([g.basic, g.twin]),
+				TYPE: "bullet"
+			}
+		},
+	]
+}
 // Traps
 Class.dualiaWeapon_trapper = {
 	PARENT: "genericTank",
@@ -254,6 +358,28 @@ Class.dualiaWeapon_hangar = {
 	]
 }
 //// Tier 1 Drones
+Class.dualiaWeapon_overseer = {
+	PARENT: "genericTank",
+	LABEL: "Overseer",
+	GUNS: [
+		{
+			POSITION: dualia.gun(0.3,0.4,1.3,0.35,0,0,0),
+			PROPERTIES: {
+				SHOOT_SETTINGS: combineStats([g.drone]),
+				TYPE: "drone",
+				MAX_CHILDREN: 4
+			}
+		},
+		{
+			POSITION: dualia.gun(0.3,0.4,1.3,0.35,0,180,0),
+			PROPERTIES: {
+				SHOOT_SETTINGS: combineStats([g.drone]),
+				TYPE: "drone",
+				MAX_CHILDREN: 4
+			}
+		},
+	]
+}
 Class.dualiaWeapon_director = {
 	PARENT: "genericTank",
 	LABEL: "Director",
@@ -261,9 +387,39 @@ Class.dualiaWeapon_director = {
 		{
 			POSITION: dualia.gun(0.3,0.55,1.3,0.35,0,0,0),
 			PROPERTIES: {
-				SHOOT_SETTINGS: combineStats([g.drone]),
+				SHOOT_SETTINGS: combineStats([g.drone, g.pounder]),
 				TYPE: "drone",
-				MAX_CHILDREN: 6
+				MAX_CHILDREN: 3
+			}
+		}
+	]
+}
+//// Tier 2 Drones
+Class.dualiaWeapon_chief = {
+	PARENT: "genericTank",
+	LABEL: "Chief",
+	GUNS: [
+		{
+			POSITION: dualia.gun(0.4,0.75,1.3,0.35,0,0,0),
+			PROPERTIES: {
+				SHOOT_SETTINGS: combineStats([g.drone, g.pounder, g.destroyer]),
+				TYPE: "drone",
+				MAX_CHILDREN: 2
+			}
+		}
+	]
+}
+//// Tier 3 Drones
+Class.dualiaWeapon_executioner = {
+	PARENT: "genericTank",
+	LABEL: "Executioner",
+	GUNS: [
+		{
+			POSITION: dualia.gun(0.45,1,1.3,0.35,0,0,0),
+			PROPERTIES: {
+				SHOOT_SETTINGS: combineStats([g.drone, g.pounder, g.destroyer, g.annihilator]),
+				TYPE: "drone",
+				MAX_CHILDREN: 1
 			}
 		}
 	]
