@@ -15,7 +15,7 @@ const dualia = {
 	},
 	turret(s,x,y,an,arc,l) {
 		return {
-			SIZE: s,
+			SIZE: 20*s,
 			X: 10*x,
 			Y: 5*y,
 			ANGLE: an,
@@ -25,7 +25,7 @@ const dualia = {
 	},
 	prop(s,x,y,an,l) {
 		return {
-			SIZE: s,
+			SIZE: 20*s,
 			X: 10*x,
 			Y: 10*y,
 			ANGLE: an,
