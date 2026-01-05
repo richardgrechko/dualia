@@ -282,7 +282,7 @@ Class.dualiaWeapon_trapper = {
 	]
 }
 //// Tier 1 Traps
-Class.dualiaWeapon_Unnamed2 = {
+Class.dualiaWeapon_unnamed2 = {
 	PARENT: "genericTank",
 	LABEL: "Unnamed2",
 	GUNS: [
