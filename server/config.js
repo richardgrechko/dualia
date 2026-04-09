@@ -1,7 +1,7 @@
 module.exports = {
     // Main Menu
     main_menu: "index.html", // Where the main menu is located (in the /public folder).
-    host: location.host, // Game server domain. If the host is 'localhost:NUMBER', the NUMBER must be the port setting.
+    host: "miniature-space-succotash-jjrq44xq67jg2vqp-3000.app.github.dev", // Game server domain. If the host is 'localhost:NUMBER', the NUMBER must be the port setting.
     port: 3000, // Which port to run the web server on.
 
     // Server
