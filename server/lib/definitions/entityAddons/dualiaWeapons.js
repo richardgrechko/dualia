@@ -1,4 +1,4 @@
-const { combineStats, skillSet, makeAura, makeAuto, makeRadialAuto } = require('../facilitators.js');
+const { weaponArray, combineStats, skillSet, makeAura, makeAuto, makeRadialAuto } = require('../facilitators.js');
 const { base, gunCalcNames, basePolygonDamage, basePolygonHealth, dfltskl, smshskl, statnames } = require('../constants.js');
 const g = require('../gunvals.js');
 const dualia = {
