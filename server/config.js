@@ -1,7 +1,7 @@
 module.exports = {
     // Main Menu
     main_menu: "index.html", // Where the main menu is located (in the /public folder).
-    host: "miniature-space-succotash-jjrq44xq67jg2vqp-3000.app.github.dev", // Game server domain. If the host is 'localhost:NUMBER', the NUMBER must be the port setting.
+    host: "project-dualia.onrender.com", // Game server domain. If the host is 'localhost:NUMBER', the NUMBER must be the port setting.
     port: 3000, // Which port to run the web server on.
 
     // Server
@@ -15,7 +15,7 @@ module.exports = {
             // The above is required if your VM (the machine that hosts the website stuff) doesn't support multi-ports and forces everything through the main server.
             // This also overrides the below HOST and PORT settings to be identical to the main server's HOST/PORT (by default, 3000).
 
-            host: "miniature-space-succotash-jjrq44xq67jg2vqp-3001.app.github.dev", // Server host location.
+            host: "project-dualia.onrender.com:3001", // Server host location.
             port: 3001, // The port on the server.
             id: "loc", // (<host>/#<id>)
             featured: false,
@@ -34,7 +34,7 @@ module.exports = {
             // The above is required if your VM (the machine that hosts the website stuff) doesn't support multi-ports and forces everything through the main server.
             // This also overrides the below HOST and PORT settings to be identical to the main server's HOST/PORT (by default, 3000).
 
-            host: "miniature-space-succotash-jjrq44xq67jg2vqp-3002.app.github.dev", // Server host location.
+            host: "project-dualia.onrender.com:3002", // Server host location.
             port: 3002, // The port on the server.
             id: "lod", // (<HOST>/#<SERVER_ID>)
             featured: false,
